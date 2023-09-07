@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap");
+:root {
+  ---main-color: #0077e6;
+  --light-color: #777;
+  --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+* {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.5s ease;
+}
+html {
+  font-size: 80%;
+  overflow-x: hidden;
+  scroll-padding-top: 8rem;
+  scroll-behavior: smooth;
+}
+
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: auto;
+  background: #fff;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.left .logo {
+  height: 4rem;
+}
+
+.middle .s {
+  width: 100%;
+  height: 40px;
+  background: #ececec;
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 10px;
+}
+.search {
+  background: transparent;
+  width: 200px;
+}
+.s button {
+  border: 0;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background: #c9cad1;
+  cursor: pointer;
+}
+.right a {
+  text-decoration: none;
+}
+.right a:hover {
+  border-bottom: 2px solid var(---main-color);
+  transition: none;
+}
+
+.right li {
+  list-style-type: none;
+  display: inline;
+  justify-content: space-between;
+  margin: 10px;
+}
+.right i {
+  width: 15px;
+  height: 15px;
+  margin: auto;
+}
+#menu-icon {
+  z-index: 1001;
+  cursor: pointer;
+  display: none;
+  font-size: 20px;
+}
+@media screen and (max-width: 900px) {
+  #menu-icon {
+    display: block;
+  }
+  .bars {
+    display: flex;
+    align-items: end;
+  }
+  .right ul {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 300px;
+    height: 70vh;
+    background: #0077e6;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    z-index: 2001;
+    padding: 50px 20px;
+    transition: all 0.55s ease;
+  }
+  .right a {
+    display: block;
+    margin: 20px 0;
+    margin-left: 0;
+  }
+  .right ul.open {
+    right: 0;
+  }
+}
+.genre {
+  background-image: url(wallhaven-fantasyblue.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  padding: 20px 0;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.genre h2 {
+  color: #f1f8f3;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+.color-overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 768px) {
+  .genre,
+  footer div {
+    min-height: 30vh;
+  }
+  header,
+  h2,
+  .genre-container {
+    font-size: calc(1.525rem + 3.3vw);
+  }
+}
+
+.genre-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.genre-item {
+  border-top-color: rgba(225, 225, 225, 0.5);
+  border-left-color: rgba(225, 225, 225, 0.5);
+  border-bottom-color: rgba(225, 225, 225, 0.1);
+  border-right-color: rgba(225, 225, 225, 0.1);
+  width: 300px;
+  margin: 20px;
+  background-color: rgba(225, 225, 225, 0.5);
+  color: #f1f8f3;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+.genre-item img {
+  width: 180px;
+  height: 180px;
+  margin-bottom: 20px;
+}
+
+.genre-item h3 {
+  font-size: 24px;
+}
+footer {
+  background: #0077e6;
+}
+.footicon {
+  height: 80px;
+}
+
+a:link {
+  color: #ebf3ed;
+  text-decoration: none;
+}
+a:visited {
+  color: #ebf3ed;
+  text-decoration: none;
+}
+a:hover {
+  color: #ebf3ed;
+  text-decoration: none;
+}
+a:active {
+  color: #ebf3ed;
+  text-decoration: none;
+}
+.checked {
+  color: orange;
+}

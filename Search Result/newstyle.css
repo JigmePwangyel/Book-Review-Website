@@ -1,0 +1,157 @@
+/*header, nav,*/
+main {
+  position: static;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+input {
+  text-transform: none;
+}
+#search-results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.book {
+  display: flex;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fff;
+  flex-basis: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.book img {
+  max-width: 100px;
+  margin-right: 20px;
+}
+
+.book-details {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+  flex-basis: 40%;
+}
+
+.review {
+  display: flex;
+  flex-basis: 60%;
+  padding: 20px;
+  padding-left: 20px;
+}
+
+.review p {
+  margin: 0;
+}
+
+.review h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.book-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner span {
+  font-weight: 600;
+}
+.book-details h3 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.book-details p {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+/* add rating section */
+.review .ratings {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.review .ratings label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.review .ratings input[type="radio"] {
+  display: none;
+}
+
+.review .ratings label span {
+  font-size: 24px;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.review .ratings label span:hover,
+.review .ratings label span:hover ~ span {
+  color: #ffcf31;
+}
+
+.review .ratings input[type="radio"]:checked ~ label span {
+  color: #ffcf31;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #000;
+}
+.custom-p {
+  padding-top: 20px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 500px) {
+  .book {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .book img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .review {
+    padding-left: 0;
+    border-left: none;
+  }
+}

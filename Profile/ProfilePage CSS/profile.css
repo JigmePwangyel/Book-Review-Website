@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap");
+:root {
+  ---main-color: #0077e6;
+  --light-color: #777;
+  --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+* {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s ease;
+}
+input {
+  text-transform: none;
+}
+html {
+  font-size: 80%;
+  overflow-x: hidden;
+  scroll-padding-top: 8rem;
+  scroll-behavior: smooth;
+}
+section {
+  padding: 50px;
+  padding-top: 0px;
+}
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: auto;
+  background: #fff;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.left .logo {
+  height: 4rem;
+}
+
+.middle .s {
+  width: 100%;
+  height: 40px;
+  background: #ececec;
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 10px;
+}
+.search {
+  background: transparent;
+  width: 200px;
+}
+.s button {
+  border: 0;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background: #c9cad1;
+  cursor: pointer;
+}
+.right a {
+  text-decoration: none;
+}
+.right a:hover {
+  border-bottom: 2px solid var(---main-color);
+  transition: none;
+}
+
+.right li {
+  list-style-type: none;
+  display: inline;
+  justify-content: space-between;
+  margin: 10px;
+}
+.right i {
+  width: 15px;
+  height: 15px;
+  margin: auto;
+}
+#menu-icon {
+  z-index: 1001;
+  cursor: pointer;
+  display: none;
+  font-size: 20px;
+}
+@media screen and (max-width: 900px) {
+  #menu-icon {
+    display: block;
+  }
+  .bars {
+    display: flex;
+    align-items: end;
+  }
+  .right ul {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 300px;
+    height: 70vh;
+    background: #0077e6;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    z-index: 1001;
+    padding: 50px 20px;
+    transition: all 0.55s ease;
+  }
+  .right a {
+    display: block;
+    margin: 20px 0;
+    margin-left: 0;
+  }
+  .right ul.open {
+    right: 0;
+  }
+}
+/*Done with header*/
+/*Accounts begin*/
+/* .accounts {
+  display: inline-flex;
+} */
+.details {
+  padding: 50px;
+  display: flex;
+}
+.profile-card {
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 25px;
+  padding: 30px;
+  border: 1px solid #ffffff40;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  background-color: rgba(255, 255, 255, 0.256);
+  display: block;
+}
+.profile-card h1 {
+  font-weight: 600;
+}
+.profile-card p {
+  color: #505050;
+}
+.profile-card span {
+  text-transform: none;
+}
+.setting {
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
+}
+.drop-down-menu {
+  display: none;
+  position: absolute;
+  z-index: 1001;
+  list-style: none;
+  padding: 10px;
+  height: 170px;
+  background-color: #f1f1f1;
+  list-style: none;
+  border-radius: 40px;
+}
+.drop-down-menu li {
+  margin: 10px;
+  margin-top: 0px;
+  padding: 10px;
+}
+.drop-down-menu label {
+  cursor: pointer;
+}
+.drop-down-menu label:hover {
+  color: var(---main-color);
+  transition: 0.2s ease-in-out;
+}
+.profile-picture {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  margin: auto;
+  object-fit: cover;
+}
+.upload {
+  display: block;
+  width: 50%;
+  margin: auto;
+  margin-top: 2rem;
+  background-color: #0077e6;
+  padding: 0.8rem;
+  border-radius: 35px;
+  color: #fff;
+  cursor: pointer;
+}
+.upload:hover {
+  letter-spacing: 1px;
+  background-color: #0077e6;
+}
+.upload:active {
+  background-color: #505050;
+}
+#inputFile {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .details {
+    display: block;
+  }
+  .accounts-info {
+    margin-bottom: 10px;
+  }
+}
+/*Done with Profile Picture*/
+/*Begin Information*/
+.accounts-info {
+  margin: 6rem;
+  margin-top: 0;
+  margin-right: 0;
+  padding-top: 30px;
+}
+.accounts-info h1 {
+  font-weight: 600;
+}
+.accounts-info span {
+  font-size: large;
+  text-transform: none;
+}
+.accounts-info .label {
+  font-weight: 600;
+}
+
+/*Done with account details*/
+/*Line*/
+.line {
+  width: 100%;
+  height: 0.4rem;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    #0077e6,
+    rgba(0, 0, 0, 0)
+  );
+}
+/*Done with lines*/
+/*Start with Books reviewd*/
+.reviews-read {
+  margin-top: 3rem;
+}
+.reviews-read h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 4rem;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+  grid-gap: 1rem;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 0px;
+  justify-items: start;
+}
+.card {
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+  border-radius: 15px;
+  height: 350px;
+  width: 250px;
+}
+.card:hover {
+  transform: translateY(-15px);
+  transition: all 0.5s ease;
+}
+.box {
+  text-align: center;
+  cursor: pointer;
+}
+.contentBoook {
+  margin-top: 2rem;
+}

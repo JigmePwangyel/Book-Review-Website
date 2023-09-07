@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search Results</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Search Result/newstyle.css" />
+    <link rel="stylesheet" href="Search Result/finalStyle.css" />
+    <script
+      src="https://kit.fontawesome.com/3190f127c4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/3190f127c4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!--Header starts-->
+    <header class="header">
+      <div class="left">
+        <img src="Main Image/final.png" alt="" class="logo" />
+      </div>
+      <div class="middle">
+        <form action="" class="s">
+          <input
+            type="search"
+            placeholder="Search"
+            class="search"
+            id="search-item"
+          />
+          <button type="submit" id="search-button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+      <div class="right">
+        <ul>
+          <a href="index.htm" class=""> <li>Home</li></a>
+          <a href="Theme.html" class=""><li>Genre</li></a>
+          <a href="contactFinal.htm" class=""><li>Contact Us</li></a>
+          <a href="About.html" class=""> <li>About Us</li></a>
+          <a href="#" id="user"
+            ><li><i class="fa-solid fa-user"></i></li
+          ></a>
+        </ul>
+        <div class="bars" id="menu-icon"><i class="fa-solid fa-bars"></i></div>
+      </div>
+    </header>
+    <!--Header ENDS-->
+    <main>
+      <section id="search-results">
+        <h2 id="h">Search Results</h2>
+        <div class="book" id="book"></div>
+      </section>
+    </main>
+
+    <!--<p>&copy; 2023 eLibrary</p>-->
+    <footer class="bg-dark text-white pt-5 pb-4">
+      <div class="containFooter text-center text-md-left">
+        <div class="row text-center text-md-left">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-primary">
+              Company Name
+            </h5>
+            <p class="text-white">BookBuzz</p>
+            <p class="text-white">
+              Discover BookBuzz, your one-stop destination for book lovers.
+              Immerse yourself in captivating stories, lively discussions, and
+              curated recommendations. Join our vibrant community and let your
+              love for books soar. Get buzzing about books with BookBuzz today!
+            </p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-primary">
+              Available Genre
+            </h5>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"
+                >Fantasy</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"
+                >Mystery</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"
+                >Science Fiction</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"
+                >Romance</a
+              >
+            </p>
+          </div>
+
+          <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-primary">
+              Contact Us
+            </h5>
+            <p class="text-white">
+              <i class="fas fa-home mr-3 text-white"></i> Phuentsholing,Chukha
+              2023 Bhutan
+            </p>
+            <p class="text-white">
+              <i class="fas fa-envelope mr-3 text-white"></i>
+              Bookbuzz023@gmail.com
+            </p>
+            <p class="text-white">
+              <i class="fas fa-phone mr-3 text-white"></i> +975 17864932
+            </p>
+            <p class="text-white">
+              <i class="fas fa-printer mr-3 text-white"></i>+01 385 633 77
+            </p>
+          </div>
+        </div>
+        <hr class="mb-4" />
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p class="text-white">
+              Copyright &copy All rights reserved by:
+              <a href="#" style="text-decoration: none">
+                <strong class="text-primary">The provider</strong>
+              </a>
+            </p>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <div class="text-center text-md-right"></div>
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">
+                <a
+                  href=""
+                  class="btn-floating btn-sm text-white"
+                  style="font-size: 23px"
+                  ><i class="fab fa-facebook text-white"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href=""
+                  class="btn-floating btn-sm text-white"
+                  style="font-size: 23px"
+                  ><i class="fab fa-twitter text-white"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href=""
+                  class="btn-floating btn-sm text-white"
+                  style="font-size: 23px"
+                  ><i class="fab fa-google text-white"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href=""
+                  class="btn-floating btn-sm text-white"
+                  style="font-size: 23px"
+                  ><i class="fab fa-linkedin text-white"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href=""
+                  class="btn-floating btn-sm text-white"
+                  style="font-size: 23px"
+                  ><i class="fab fa-youtube text-white"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+    import {
+      getDatabase,
+      update,
+      set,
+      ref,
+      orderByChild,
+      startAt,
+      endAt,
+      equalTo,
+      query,
+      onValue,
+      get,
+    } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-database.js";
+    import {
+      getAuth,
+      createUserWithEmailAndPassword,
+      onAuthStateChanged,
+    } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyA-uwO2oey_TBYu_Xpwms3VcBO068Ic0a8",
+      authDomain: "miniproject-1ca20.firebaseapp.com",
+      databaseURL:
+        "https://miniproject-1ca20-default-rtdb.asia-southeast1.firebasedatabase.app",
+      projectId: "miniproject-1ca20",
+      storageBucket: "miniproject-1ca20.appspot.com",
+      messagingSenderId: "56934343229",
+      appId: "1:56934343229:web:c457a2cc065b0b6847c054",
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app);
+    const auth = getAuth();
+    // Retrieve the search query parameter from the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const searchQuery = urlParams.get("q");
+
+    // Reference to your Firebase Realtime Database
+    const databaseRef = ref(database, "Books");
+
+    if (searchQuery === "") {
+      console.log("Nothing in search area");
+    } else {
+      console.log(searchQuery);
+      var found = false;
+      get(databaseRef)
+        .then((snapshot) => {
+          if (snapshot.exists()) {
+            const booksData = snapshot.val();
+            // Iterate over the book IDs and retrieve the book details
+            Object.keys(booksData).forEach((bookId) => {
+              const book = booksData[bookId];
+              // Access the book properties
+              const titleBook = book.title;
+              const genreBook = book.genre;
+              const imageUrlBook = book.imageUrl;
+              const description = book.description;
+              if (titleBook.toLowerCase() === searchQuery.toLowerCase()) {
+                //Initializing the elements
+                const div2 = document.createElement("div");
+                div2.setAttribute("data-card-id", titleBook);
+                const div3 = document.createElement("div");
+                div3.setAttribute("data-card-id", titleBook);
+                const div4 = document.createElement("div");
+                div4.setAttribute("data-card-id", titleBook);
+                const img = document.createElement("img");
+                img.setAttribute("data-card-id", titleBook);
+                const h5 = document.createElement("h5");
+                h5.setAttribute("data-card-id", titleBook);
+                const p = document.createElement("p");
+                p.setAttribute("data-card-id", titleBook);
+                p.classList.add("custom-p");
+                const span = document.createElement("span");
+                //Giving class name to the elements
+
+                div2.className = "book-details";
+                div3.className = "review";
+                div4.className = "inner";
+
+                //Declaring the container
+                const book = document.getElementById("book");
+                //Adding stuff to the elements
+                img.src = imageUrlBook;
+                h5.textContent = "Title: " + titleBook;
+                span.textContent = "Genre: " + genreBook;
+                p.textContent = description;
+                //p.style.fontWeight = "bold";
+
+                //Adding Created Element
+                div4.appendChild(h5);
+                div4.appendChild(span);
+                div4.appendChild(p);
+                div3.appendChild(div4);
+                div2.appendChild(img);
+                book.appendChild(div2);
+                book.appendChild(div3);
+
+                found = true;
+                throw new Error("Found Book");
+              } else {
+                console.log("No books found with title: " + searchQuery);
+              }
+            });
+          }
+          if (!found) {
+            console.log("No books found.");
+            const h2 = document.getElementById("h");
+            h2.innerHTML = "No Such Book is in the database";
+          }
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+      //Function menu
+      document.querySelector("#user").addEventListener("click", function () {
+        checkUser();
+      });
+      function checkUser() {
+        onAuthStateChanged(auth, (user) => {
+          if (user) {
+            window.location.href = "profilePage.html";
+          } else {
+            window.location.href = "Login.html";
+          }
+        });
+      }
+      //Onclick event for Card in the review section
+      const book = document.getElementById("book");
+      book.addEventListener("click", function (event) {
+        event.preventDefault();
+        // Code to execute when a card is clicked
+        const clickedCard = event.target; // Get the actual card element that was clicked
+        const title = clickedCard.getAttribute("data-card-id");
+        window.location.href = "BookPage.html?q=" + encodeURIComponent(title);
+        console.log("Card clicked:", clickedCard.getAttribute("data-card-id"));
+      });
+
+      // Reference to your Firebase Realtime Database
+      const searchButton = document.getElementById("search-button");
+      const searchInput = document.getElementById("search-item");
+      var SearchTerm;
+      searchButton.addEventListener("click", function (event) {
+        event.preventDefault();
+        SearchTerm = searchInput.value;
+        window.location.href =
+          "newsearch.html?q=" + encodeURIComponent(SearchTerm);
+      });
+    }
+  </script>
+</html>
